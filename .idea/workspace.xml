@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a889c054-8891-4709-a9e7-c4f8d8934d85" name="默认更改列表" comment="update" />
+    <list default="true" id="a889c054-8891-4709-a9e7-c4f8d8934d85" name="默认更改列表" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/lenovo_PC.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01.语言参考/2.类型/5.字符串.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="378">
+              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -181,7 +189,7 @@
       <workItem from="1539567541937" duration="2120000" />
       <workItem from="1539666544745" duration="1383000" />
       <workItem from="1539669128008" duration="9000" />
-      <workItem from="1539675868692" duration="3496000" />
+      <workItem from="1539675868692" duration="3760000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1539567836925</created>
@@ -222,10 +230,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7008000" />
+    <option name="totallyTimeSpent" value="7272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-17" y="36" width="1532" height="1337" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26358697" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -301,8 +310,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01.语言参考/2.类型/5.字符串.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="378">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>
