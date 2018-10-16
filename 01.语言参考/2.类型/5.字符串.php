@@ -22,3 +22,49 @@ echo 'Variables do not $expand $either'.'<br/>';
 $a = 123;
 echo "value a = $a\n";
 echo "\thello";
+
+// heredoc 结构, 类似于双引号字符串
+$str = <<< EOD
+这是一个 heredoc 结构的字符串, 
+单引号不用被转义，但是上文中列出的转义序列还可以使用, 
+变量将被替换
+EOD;
+
+class foo {
+    var $a, $b;
+    function f(){
+        $this->a = 'foo';
+        $this->b = array('bar1','bar2','bar3');
+    }
+}
+$fo = new foo();
+$name = 'my_name';
+
+echo <<<EOT
+My name is "$name", I'm printing some $fo->a,
+Now, I'm printing some {$fo->b},
+This should print a capital 'A': \x41
+EOT;
+
+// nowdoc 结构, 类似于单引号字符串
+$str = <<< 'EOD'
+这是一个 heredoc 结构的字符串, 
+单引号不用被转义，但是上文中列出的转义序列还可以使用, 
+变量将被替换
+EOD;
+
+class foo2 {
+    var $a, $b;
+    function f(){
+        $this->a = 'foo';
+        $this->b = array('bar1','bar2','bar3');
+    }
+}
+$fo = new foo2();
+$name = 'my_name';
+
+echo <<<'EOT'
+My name is "$name", I am printing some $fo->a,
+Now, I am printing some {$fo->b},
+This should print a capital 'A': \x41
+EOT;
