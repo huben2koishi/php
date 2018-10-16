@@ -23,4 +23,9 @@ var_dump(25/7);
 // 强制转换为 int, 舍弃小数部分
 var_dump((int) (25/7));
 // round() 四舍五入
-var_dump(round(25/7));  //
+var_dump(round(25/7));
+
+// 将一个值转换成 int, 可用 (int) 强制转换, 还可通过函数 intval() 转换
+//     resource 转换成 int 时, 结果为 php 为 resource 分配的唯一资源号
+//     布尔值转换成 int 时, true 为 1, false 为 0
+//     浮点数转换成 int 时, 向下取整
