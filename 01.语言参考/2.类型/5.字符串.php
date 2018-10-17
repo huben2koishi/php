@@ -82,4 +82,5 @@ class people{public $name = 'John';}
 $man = new people();
 echo "<br/>$man->name want to drink $fruits[2] juice.";
 // 2. 复杂语法
-
+$great = 'fantastic';
+echo "This is { $great}";
