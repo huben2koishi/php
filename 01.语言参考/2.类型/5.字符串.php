@@ -68,3 +68,18 @@ My name is "$name", I am printing some $fo->a,
 Now, I am printing some {$fo->b},
 This should print a capital 'A': \x41
 EOT;
+
+// 变量解析
+// 1. 简单规则, 当遇到一个 $ 符号,
+//    php 解析器会组合尽量多的标识以形成一个合法的变量名
+//    array 索引和对象属性也可被解析
+$juice = "apple";
+echo "<br/>He drank some $juice juice.".PHP_EOL;
+echo @"<br/>He drank some juice made of $juices.";
+
+$fruits = array('apple','banana','orange');
+class people{public $name = 'John';}
+$man = new people();
+echo "<br/>$man->name want to drink $fruits[2] juice.";
+// 2. 复杂语法
+
