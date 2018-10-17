@@ -48,9 +48,9 @@ EOT;
 
 // nowdoc 结构, 类似于单引号字符串
 $str = <<< 'EOD'
-这是一个 heredoc 结构的字符串, 
-单引号不用被转义，但是上文中列出的转义序列还可以使用, 
-变量将被替换
+这是一个 nowdoc 结构的字符串, 
+不进行转义操作, 
+变量将不会被替换
 EOD;
 
 class foo2 {
@@ -83,4 +83,8 @@ $man = new people();
 echo "<br/>$man->name want to drink $fruits[2] juice.";
 // 2. 复杂语法
 $great = 'fantastic';
-echo "This is { $great}";
+echo "<br/>This is { $great}";
+echo "<br/>This is {$great} ${great}";
+
+// strlen() 获取字符串长度
+echo "<br/>".strlen('string');
