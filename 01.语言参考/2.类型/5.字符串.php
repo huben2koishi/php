@@ -87,4 +87,23 @@ echo "<br/>This is { $great}";
 echo "<br/>This is {$great} ${great}";
 
 // strlen() 获取字符串长度
-echo "<br/>".strlen('string');
+echo "<br/>".strlen('string')."<br/>";
+
+$str = 'abc';
+var_dump($str[1]); echo "<br/>";
+var_dump(isset($str[1])); echo "<br/>";
+var_dump($str[1.0]); echo "<br/>";
+var_dump(isset($str[1.0])); echo "<br/>";
+var_dump($str['x']); echo "<br/>";
+var_dump(isset($str['x'])); echo "<br/>";
+var_dump($str['1x']); echo "<br/>";
+var_dump(isset($str['1x'])); echo "<br/>";
+
+// 转换为字符串
+//     布尔值的 true 转换为 "1", false 转换为 ""
+//     整型和浮点型转换为数字的字面样式的 string
+//     数组转化为 "array"
+//     对象转化为 "object"
+//     资源转化为 "Resource id #1" 结构的字符串
+//     null 转化为空字符串
+
