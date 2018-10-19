@@ -55,3 +55,26 @@ var_dump($array5["42"]);
 echo "<br/>";
 var_dump($array5["multi"]["aa"]["bb"]);
 echo "<hr/>";
+
+// 数组解引用
+function getArray()
+{
+    return array(1, 2, 3);
+}
+
+$second_element = getArray()[1];
+echo $second_element;
+
+// 修改 array
+$array6 = array(
+    1 => 1,
+    5 => 2,
+);
+$array6[] = 56; // 等效于 $array[6] = 56
+$array6["x"] = "a";
+unset($array6[6]); // 删除某个数组元素
+unset($array6); // 删除整个数组
+
+// 转换为数组
+//     整型, 浮点型, 字符串, 布尔值, 资源类型转换我数组, 等价于 array($value)
+//     对象类型转换为数组, 键名为变量名, 值为变量值
