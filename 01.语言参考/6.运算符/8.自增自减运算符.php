@@ -15,18 +15,18 @@ $d = 5;
 echo --$d;  // 前减
 echo $d;
 
-echo '== Alphabets ==' . PHP_EOL;
+echo '<br/>'.'== Alphabets ==' . '<br/>';
 $s = 'W';
 for ($n=0; $n<6; $n++) {
-    echo ++$s . PHP_EOL;
+    echo ++$s . '<br/>';
 }
 // Digit characters behave differently
-echo '== Digits ==' . PHP_EOL;
+echo '== Digits ==' . '<br/>';
 $d = 'A8';
 for ($n=0; $n<6; $n++) {
-    echo ++$d . PHP_EOL;
+    echo ++$d . '<br/>';
 }
 $d = 'A08';
 for ($n=0; $n<6; $n++) {
-    echo ++$d . PHP_EOL;
+    echo ++$d . '<br/>';
 }
