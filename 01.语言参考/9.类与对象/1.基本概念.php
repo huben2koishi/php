@@ -1,7 +1,4 @@
 <?php
-
-
-
 // class
 class simple_class {
     public $var = 'a default value';
