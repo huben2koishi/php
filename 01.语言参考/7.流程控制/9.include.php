@@ -1,5 +1,5 @@
 <?php
-// include 包含并运行指定文件 未找到文件会发出一条警告
+// include 包含并运行指定文件 未找到文件时发出一个警告
 echo @"A $fruit is $color";
 echo "<hr/>";
 

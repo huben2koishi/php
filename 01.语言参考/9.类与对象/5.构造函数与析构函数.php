@@ -23,10 +23,10 @@ $obj2 = new SubClass();
 $obj3 = new OtherClass();
 
 // 析构函数 某个对象所有引用都被删除或对象被显式销毁时调用
-class MyDestructableClass {
+class MyDestructClass {
     function __construct() {
         print "In constructor<br/>";
-        $this->name = "MyDestructableClass";
+        $this->name = "MyDestrucClass";
     }
     
     function __destruct() {
@@ -34,4 +34,4 @@ class MyDestructableClass {
     }
 }
 
-$obj4 = new MyDestructableClass();
+$obj4 = new MyDestructClass();
