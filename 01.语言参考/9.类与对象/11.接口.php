@@ -33,11 +33,9 @@ interface b extends a {
 
 class c implements b {
     public function foo() {
-        // TODO: Implement foo() method.
     }
 
     public function bar($value) {
-        // TODO: Implement bar() method.
     }
 }
 
@@ -48,10 +46,8 @@ interface d {
 
 class e implements a, d {
     public function foo() {
-        // TODO: Implement foo() method.
     }
 
     public function baz() {
-        // TODO: Implement f() method.
     }
 }
