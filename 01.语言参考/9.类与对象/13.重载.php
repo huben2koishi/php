@@ -59,3 +59,10 @@ echo $obj->getHidden() . '<br/>';
 echo $obj->hidden;
 
 // 方法重载
+// mixed __call(String $name, array $arguments) 在对象中调用不可访问方法时调用
+// static mixed __callStatic(String $name, array $arguments) 在静态上下文中调用不可访问方法时调用
+class MethodTest{
+    public function __call($name, $arguments) {
+        echo "Calling object method '$name' " . implode(', ', $arguments). "<br/>";
+    }
+}
