@@ -11,10 +11,10 @@ function bool2str($bool) {
 }
 
 function compareObjects($obj1, $obj2) {
-    echo 'o1 == o2 : ' . bool2str($obj1 == $obj2) . "<br/>";
-    echo 'o1 != o2 : ' . bool2str($obj1 != $obj2) . "<br/>";
-    echo 'o1 === o2 : ' . bool2str($obj1 === $obj2) . "<br/>";
-    echo 'o1 !== o2 : ' . bool2str($obj1 !== $obj2) . "<br/>";
+    echo 'obj1 == obj2 : ' . bool2str($obj1 == $obj2) . "<br/>";
+    echo 'obj1 != obj2 : ' . bool2str($obj1 != $obj2) . "<br/>";
+    echo 'obj1 === obj2 : ' . bool2str($obj1 === $obj2) . "<br/>";
+    echo 'obj1 !== obj2 : ' . bool2str($obj1 !== $obj2) . "<br/>";
 }
 
 class Flag {
@@ -41,8 +41,8 @@ $obj4 = new OtherFlag();
 echo "同一个类的实例<br/>";
 compareObjects($obj1, $obj2);
 
-echo "<br/>Two references to the same instance<br/>";
-compareObjects($obj1, $obj2);
-
-echo "<br/>Instances of two different classes<br/>";
+echo "<br/>同一个引用<br/>";
 compareObjects($obj1, $obj3);
+
+echo "<br/>不同类相同属性<br/>";
+compareObjects($obj1, $obj4);
