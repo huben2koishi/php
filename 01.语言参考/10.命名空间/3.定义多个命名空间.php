@@ -3,12 +3,13 @@
 
 namespace MyProject {
     const CONNECT_OK = 1;
-    
+
     class Connection {
         static function start() {
             return 1;
         }
     }
+
     function connect() {
         return 1;
     }
@@ -19,6 +20,7 @@ namespace AnotherProject {
     const CONNECT_OK = 1;
     class Connection {
     }
+
     function connect() {
     }
 }
