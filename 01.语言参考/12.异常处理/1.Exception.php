@@ -1,7 +1,6 @@
 <?php
-
 // Exception  所有异常的基类
-class Exception {
+class mException {
     protected $message;  // string 异常内容
     protected $code;     // int    异常代码
     protected $file;     // string 抛出异常的文件名
