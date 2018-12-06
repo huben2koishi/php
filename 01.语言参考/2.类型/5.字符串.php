@@ -1,20 +1,20 @@
 <?php
-echo 'this is a simple string'.'<br/>';
+echo 'this is a simple string' . '<br/>';
 
 // 定义一个字符串的最简单的方法是用单引号把它包围起来（字符 '）。
 
 // 可以录入多行
 echo 'You can also have embedded newlines in 
 strings this way as it is
-okay to do'.'<br/>';
+okay to do' . '<br/>';
 
 // 单引号中的字符串, 转义符只识别 \\ 和 \' , 不会识别变量名
 
-echo 'Arnold once said: "I\'ll be back"'.'<br/>';
-echo 'You deleted C:\\*.*?'.'<br/>';
-echo 'You deleted C:\*.*?'.'<br/>';
-echo 'This will not expand: \n a newline'.'<br/>';
-echo 'Variables do not $expand $either'.'<br/>';
+echo 'Arnold once said: "I\'ll be back"' . '<br/>';
+echo 'You deleted C:\\*.*?' . '<br/>';
+echo 'You deleted C:\*.*?' . '<br/>';
+echo 'This will not expand: \n a newline' . '<br/>';
+echo 'Variables do not $expand $either' . '<br/>';
 
 // 如果字符串是包围在双引号("")中， PHP 将对以下特殊的字符进行解析
 // \n \r \t \v \e \f \\ \$ \" \[0-7]{1,3} \x[0-9a-fA-F]{1,2}
@@ -32,11 +32,13 @@ EOD;
 
 class foo {
     var $a, $b;
-    function f(){
+
+    function f() {
         $this->a = 'foo';
-        $this->b = array('bar1','bar2','bar3');
+        $this->b = array('bar1', 'bar2', 'bar3');
     }
 }
+
 $fo = new foo();
 $name = 'my_name';
 
@@ -55,11 +57,13 @@ EOD;
 
 class foo2 {
     var $a, $b;
-    function f(){
+
+    function f() {
         $this->a = 'foo';
-        $this->b = array('bar1','bar2','bar3');
+        $this->b = array('bar1', 'bar2', 'bar3');
     }
 }
+
 $fo = new foo2();
 $name = 'my_name';
 
@@ -74,11 +78,15 @@ EOT;
 //    php 解析器会组合尽量多的标识以形成一个合法的变量名
 //    array 索引和对象属性也可被解析
 $juice = "apple";
-echo "<br/>He drank some $juice juice.".PHP_EOL;
+echo "<br/>He drank some $juice juice." . PHP_EOL;
 echo @"<br/>He drank some juice made of $juices.";
 
-$fruits = array('apple','banana','orange');
-class people{public $name = 'John';}
+$fruits = array('apple', 'banana', 'orange');
+
+class people {
+    public $name = 'John';
+}
+
 $man = new people();
 echo "<br/>$man->name want to drink $fruits[2] juice.";
 // 2. 复杂语法
@@ -87,17 +95,25 @@ echo "<br/>This is { $great}";
 echo "<br/>This is {$great} ${great}";
 
 // strlen() 获取字符串长度
-echo "<br/>".strlen('string')."<br/>";
+echo "<br/>" . strlen('string') . "<br/>";
 
 $str = 'abc';
-var_dump($str[1]); echo "<br/>";
-var_dump(isset($str[1])); echo "<br/>";
-var_dump($str[1.0]); echo "<br/>";
-var_dump(isset($str[1.0])); echo "<br/>";
-var_dump($str['x']); echo "<br/>";
-var_dump(isset($str['x'])); echo "<br/>";
-var_dump($str['1x']); echo "<br/>";
-var_dump(isset($str['1x'])); echo "<br/>";
+var_dump($str[1]);
+echo "<br/>";
+var_dump(isset($str[1]));
+echo "<br/>";
+var_dump($str[1.0]);
+echo "<br/>";
+var_dump(isset($str[1.0]));
+echo "<br/>";
+var_dump($str['x']);
+echo "<br/>";
+var_dump(isset($str['x']));
+echo "<br/>";
+var_dump($str['1x']);
+echo "<br/>";
+var_dump(isset($str['1x']));
+echo "<br/>";
 
 // 转换为字符串
 //     布尔值的 true 转换为 "1", false 转换为 ""
