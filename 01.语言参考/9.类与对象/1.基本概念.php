@@ -1,8 +1,9 @@
 <?php
+
 // class
 class simple_class {
     public $var = 'a default value';
-    
+
     public function display_var() {
         echo $this->var;
     }
@@ -44,7 +45,17 @@ echo '<hr/>';
 // 创建新对象
 class Test {
     public static function getNew() {
-        return new static;
+        return new static;// 基于当前的类创建对象
+    }
+
+    public function getObj() {
+        return new self();// 返回当前类实例对象
+    }
+}
+
+class TestExtend extends Test {
+    public function getParent() {
+        return new parent();// 返回当前类的父类实例对象
     }
 }
 
@@ -73,7 +84,7 @@ echo '<hr/>';
 // ::class
 //namespace NS;
 class class_name {
-    
+
 }
 
 echo class_name::class;

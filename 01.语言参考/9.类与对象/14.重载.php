@@ -19,7 +19,7 @@ class PropertyTest {
 
     public function __get($name) {
 
-         "getting $name<br/>";
+        echo "getting $name<br/>";
         if (array_key_exists($name, $this->data)) {
             return $this->data[$name];
         }
